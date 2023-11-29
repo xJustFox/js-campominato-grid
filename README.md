@@ -22,4 +22,5 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
     - 3.2 Utilizza un `for` loop per generare i quadrati;
         - 3.2.1 Inizzializza la variabile `cell`;
             - Assegna alla variabile `cell` la funzione `createCell(i)` dandogli come valore `i`;
-        - 3.2.2 Unisci alla costante `grid` la variabile `cell` attraverso `.appendChild(cell)`;
+        - 3.2.2 Assegna alla variabile `cell` la variabile `i` attraverso `.innerText`
+        - 3.2.3 Unisci alla costante `grid` la variabile `cell` attraverso `.appendChild(cell)`;
