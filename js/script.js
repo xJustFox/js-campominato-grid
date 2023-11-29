@@ -10,7 +10,7 @@ function createCell() {
 const startButton = document.getElementById("startButton");
 
 // ISTRUZIONE BOTTONE "Start Game"
-startButton.addEventListener("click", function () {
+startButton.addEventListener("click", function (){
     const grid = document.getElementById("grid");
     
     // loop che genera i quadrati e gli inserisce nelle griglia
@@ -18,6 +18,13 @@ startButton.addEventListener("click", function () {
         let cell = createCell(i);
 
         cell.innerText = i;
+
+        // BONUS
+        cell.addEventListener("click", function(){
+            this.classList.add("bg-info")
+
+            console.log(this.innerText)
+        })
     
         grid.appendChild(cell);
     }
