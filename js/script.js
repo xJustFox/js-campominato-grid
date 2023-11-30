@@ -12,10 +12,10 @@ const startButton = document.getElementById("startButton");
 // ISTRUZIONE BOTTONE "Start Game"
 startButton.addEventListener("click", function (){
     const grid = document.getElementById("grid");
-    
+    grid.innerHTML = "";
     // loop che genera i quadrati e gli inserisce nelle griglia
     for (let i = 1; i <= 100; i++) {
-        let cell = createCell(i);
+        let cell = createCell();
 
         cell.innerText = i;
 
